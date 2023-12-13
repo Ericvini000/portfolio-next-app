@@ -27,10 +27,13 @@ const config: Config = {
           100: "#623CEA",
           50: "#311E75",
         },
+        secondary: {
+          100: "#FF577F",
+        },
         social: {
-          face: "#FF2253",
+          face: "#3b5998",
           phone: "#4ACA94",
-          insta: "#FFE9EE",
+          insta: "#D62976",
           linkdn: "#0E76A8",
         },
       },

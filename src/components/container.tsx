@@ -7,7 +7,7 @@ interface Props {
 
 const Container = ({ children }: Props) => {
     return (
-        <div className="min-w-screen min-h-screen">
+        <div className="min-w-screen min-h-screen py-16">
             {children}
         </div>
     )
