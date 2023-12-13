@@ -1,5 +1,5 @@
 import Image from "next/image"
-import profileImage from '@/app/assets/img/profile_img.png';
+import profileImage from '@/assets/img/profile_img.png';
 import SocialMedias from "./socialMedias";
 
 
