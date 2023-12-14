@@ -5,7 +5,7 @@ import SocialMedias from "./socialMedias";
 
 const Apresentation = () => {
     return (
-        <section className="mx-4 lg:pt-8 lg:mx-36">
+        <section className="mx-6 lg:pt-8 lg:mx-36">
             <div className="h-10 flex items-center gap-6 text-gray-200 my-10">
                 <div className="w-12 h-12 rounded-full bg-gray-100">
                     <Image className="w-12 h-12 rounded-full object-cover" src={profileImage} alt="Profile image" />
