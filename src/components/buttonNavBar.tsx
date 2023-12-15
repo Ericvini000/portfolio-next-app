@@ -20,7 +20,7 @@ const ButtonNavBar = () => {
                 :
                 <>
                     <IoCloseSharp className="w-full h-full text-3xl" />
-                    <ul className="absolute w-28 h-40 right-[0%] animate-in slide-in-from-top-12 ease-out duration-300 rounded-md w-[25%] -bottom-[220%] flex flex-col justify-between bg-gray-500 z-22" >
+                    <ul className="absolute h-40 right-[0%] animate-in slide-in-from-top-12 ease-out duration-300 rounded-md w-[25%] -bottom-[220%] flex flex-col justify-between bg-gray-500 z-22" >
                         <li className="bg-gray-500 py-3">Sobre mim</li>
                         <li className="bg-gray-500 py-3">Projetos</li>
                         <li className="bg-gray-500 py-3 rounded-md">Contato</li>
