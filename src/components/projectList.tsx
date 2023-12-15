@@ -1,13 +1,18 @@
+import { fetchRepositories, Repository } from './fetchs';
 import ProjectListItem from "./projectListItem"
 
 
-const ProjectList = () => {
+const ProjectList = async () => {
 
-    //TODO consertar o flex da lista com muitos itens
+    // const repos: Repository[] = await fetchRepositories()
 
     return (
-        <ul className="flex flex-col gap-8 flex-wrap overflow-auto max-h-[720px]">
-            <ProjectListItem />
+        <ul className="flex flex-col lg:flex-row lg:gap-y-16 lg:flex-wrap gap-8 overflow-auto max-h-[600px] scrollbar scrollbar-thin scrollbar-track-gray-400 scrollbar-track-rounded-md scrollbar-thumb-primary-100">
+            {/* {
+                repos.map((element, index) => (
+                    <ProjectListItem key={index + 0} name={element.name} description={element.description} html_url={element.html_url} app_url={"app"} language={element.language} />
+                ))
+            } */}
         </ul>
     )
 }

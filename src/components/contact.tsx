@@ -1,9 +1,10 @@
 import ContactList from './contactList';
+import CopiedModal from './copiedModal';
 
 
 const Contact = () => {
     return (
-        <section className="mx-6 flex flex-col gap-8 lg:flex-row lg:justify-between lg:mx-36 mt-16" >
+        <section id='contact' className="relative mx-6 flex flex-col gap-8 lg:flex-row lg:justify-between lg:mx-36 lg:mt-24" >
             <div className="flex flex-col gap-4 lg:gap-12 lg:w-[50%]">
                 <h1 className="text-2xl/9 font-bold lg:w-[75%]">Que tal conversar um pouco e tirar as <span className="text-primary-100">ideias</span> do papel <span className="text-primary-100">agora mesmo</span>?</h1>
 
@@ -11,6 +12,8 @@ const Contact = () => {
             </div>
 
             <ContactList />
+
+            <CopiedModal />
         </section>
     )
 }
