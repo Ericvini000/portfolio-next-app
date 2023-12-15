@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import SocialMedias from "./socialMedias";
 
 
@@ -12,7 +13,7 @@ const Apresentation = () => {
                     Procuro não apenas um trabalho mas uma carreira como Desenvolvedor no mercado de trabalho, idealizando, arquitetando e desenvolvendo sites, api`s e
                     outros sistemas, aprofundando meus conhecimentos cada vez mais e acima de tudo criando novos laços através de grupos, eventos e contribuições para a comunidade de TI durante minha jornada.</span>
                 <div className="flex gap-3.5 lg:gap-16 lg:mt-16 items-center">
-                    <button className="px-4 py-3 w-[35%] lg:w-52 bg-primary-100 focus:none hover:bg-primary-50 transition hover:transition rounded-md">Ver projetos</button>
+                    <Link href={"#projects"} className="px-4 py-3 w-[35%] lg:w-52 bg-primary-100 focus:none hover:bg-primary-50 transition hover:transition rounded-md flex justify-center items-center ">Ver projetos</Link>
                     <SocialMedias />
                 </div>
             </div>

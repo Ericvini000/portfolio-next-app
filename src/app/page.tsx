@@ -8,7 +8,7 @@ import Contact from "@/components/contact";
 
 export default function Home() {
   return (
-    <main className="font bg-gray-400 min-h-screen">
+    <main className="font bg-gray-400 min-h-screen relative">
       <Container>
         <Header />
         <Apresentation />
