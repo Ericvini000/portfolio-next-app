@@ -4,7 +4,7 @@ import { createContext, ReactNode, useState } from 'react';
 
 interface IWebsite {
     name: string;
-    language: string | null;
+    language: string | null | undefined;
     app_url: string | null | undefined;
 }
 
@@ -36,7 +36,7 @@ const PortfolioProvider = ({ children }: { children: ReactNode }) => {
             app_url: "https://ericvini000.github.io/git_search_user_info--createdInKenzie/"
         },
         {
-            name: "kenzie-burguer-createdInKenzie",
+            name: "projeto_e_commerce--createdInKenzie",
             language: "Javascript",
             app_url: "https://ericvini000.github.io/projeto_e_commerce--createdInKenzie/"
         },
@@ -45,7 +45,7 @@ const PortfolioProvider = ({ children }: { children: ReactNode }) => {
 
     const loadProjects = (projectElement: TRepository) => {
         const foundProject = webSites.find(e => e.name === projectElement.name)
-        const newProject: TRepository = { ...projectElement, app_url: foundProject?.app_url }
+        const newProject: TRepository = { ...projectElement, language: foundProject?.language, app_url: (foundProject?.app_url ?? "Typescript") }
         return newProject
     }
     const showAndHiddenModal = (text: string) => {

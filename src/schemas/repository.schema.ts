@@ -4,7 +4,7 @@ const repositorySchema = z.object({
   name: z.string(),
   html_url: z.string(),
   description: z.string().nullable(),
-  language: z.string().nullable(),
+  language: z.string().nullish(),
   app_url: z.string().nullish(),
 });
 

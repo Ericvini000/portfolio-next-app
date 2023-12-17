@@ -1,4 +1,3 @@
-
 import ContactListItem from './contactListItem';
 
 

@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import SocialMedias from "./socialMedias";
 
