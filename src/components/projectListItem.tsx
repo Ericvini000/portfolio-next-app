@@ -5,8 +5,8 @@ import { FaGithub } from "react-icons/fa"
 interface Props {
     name: string;
     html_url: string;
-    description: string;
-    language: string;
+    description: string | undefined | null;
+    language: string | null;
     app_url: string;
 }
 
@@ -14,9 +14,9 @@ const ProjectListItem = ({ name, description, html_url, app_url, language }: Pro
     return (
         <li className="flex flex-col gap-4 lg:w-[48%]">
             <h2 className="text-2xl font-bold">{name}</h2>
-            <span className="text-gray-300">Linguagem: {language}</span>
+            <span className="text-gray-300">Linguagem: {language ? language : "Linguagem não fornecida"}</span>
             <p className="text-gray-300 text-base">
-                {description}
+                {description ? description : "Descrição não fornecida"}
             </p>
             <div className="flex gap-2 lg:gap-12">
                 <Link

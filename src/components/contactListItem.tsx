@@ -2,7 +2,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { useCallback } from "react";
-import useContact from "@/hooks/useContact";
+import usePortfolio from "@/hooks/usePortfolio";
 
 interface Props {
     icon: string;
@@ -16,7 +16,7 @@ interface Props {
 
 const ContactListItem = ({ icon, bgColor, title, description, button, info }: Props) => {
 
-    const { showAndHiddenModal } = useContact()
+    const { showAndHiddenModal } = usePortfolio()
 
     const getIcon = (iconName: string) => {
         switch (iconName) {

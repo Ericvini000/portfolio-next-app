@@ -1,5 +1,5 @@
 'use client'
-import useContact from "@/hooks/useContact";
+import useContact from "@/hooks/usePortfolio";
 
 const CopiedModal = () => {
     const { modalState, text } = useContact()
