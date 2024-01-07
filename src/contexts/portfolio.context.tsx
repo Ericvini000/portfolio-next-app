@@ -28,7 +28,7 @@ const PortfolioProvider = ({ children }: { children: ReactNode }) => {
         {
             name: "kenzie-burguer-createdInKenzie",
             language: "Typescript",
-            app_url: "https://vercel.com/hamburgueria-website-project/kenzie-burguer-v2-template-ericvini"
+            app_url: "https://kenzie-burguer-v2-template-ericvini-dt210l2o5.vercel.app"
         },
         {
             name: "git_search_user_info--createdInKenzie",
